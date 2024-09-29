@@ -21,7 +21,7 @@ Unlike the typical behavior where the URL validity starts immediately upon gener
 ### 2. Sliding Window Signed URL Generation
 This feature allows you to generate the same signed URL for repeated access within a sliding window. By specifying the window duration and the residual time, the system can transition to the next time slot early. The slot will always start in advance by the residual time specified.
 
-- **Benefit for caching**: By generating identical URLs during the sliding window, local caches can store and reuse both the URL and the content without making redundant calls to S3.
+**Benefit for caching**: By generating identical URLs during the sliding window, local caches can store and reuse both the URL and the content without making redundant calls to S3.
 
 ## How to Use
 
