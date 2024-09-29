@@ -23,20 +23,13 @@ This feature allows you to generate the same signed URL for repeated access with
 
 - **Benefit for caching**: By generating identical URLs during the sliding window, local caches can store and reuse both the URL and the content without making redundant calls to S3.
 
-### 3. Identical URLs for Same Parameters
-Signed URLs generated with the same parameters, including start time and expiration, will always be identical, ensuring consistency across requests.
-
 ## How to Use
 
 1. Specify the desired `bucket`, `key`, `start time`, and `expiration time` for generating a custom signed URL.
 2. Optionally, configure the `sliding window` and `residual time` to generate consistent URLs for repeated access across time slots.
 3. Use the generated signed URLs to access your S3 objects securely and flexibly.
 
-# AWS S3 URL Signing in Go
-
-This document demonstrates how to use the `S3UrlSigner` and `S3UrlSignerSlidingWindow` to generate signed URLs for AWS S3 resources.
-
-#Examples
+# Examples
 
 ## Basic S3 URL Signing
 
