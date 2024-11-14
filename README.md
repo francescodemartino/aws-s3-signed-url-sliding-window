@@ -1,4 +1,4 @@
-# AWS S3 Signed URL Generator
+# AWS S3 Signed URL Generator with Sliding Window
 
 ## Project Purpose
 
